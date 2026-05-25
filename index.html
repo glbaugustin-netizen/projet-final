@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation — Projet Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">P</span>
+        <span class="nav__logo-text">Projet Final</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link active">Présentation</a></li>
+        <li><a href="batiments.html" class="nav__link">Les Bâtiments</a></li>
+        <li><a href="energie.html" class="nav__link">Énergie</a></li>
+        <li><a href="structure.html" class="nav__link">Structure</a></li>
+        <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a></li>
+      </ul>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav__mobile" id="mobileNav">
+      <a href="index.html" class="nav__link active">Présentation</a>
+      <a href="batiments.html" class="nav__link">Les Bâtiments</a>
+      <a href="energie.html" class="nav__link">Énergie</a>
+      <a href="structure.html" class="nav__link">Structure</a>
+      <a href="galerie.html" class="nav__link">Galerie</a>
+      <a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Lotissement · Habitat Partagé · Seniors</p>
+        <h1 class="hero__title">Projet Final</h1>
+        <p class="hero__subtitle">Un lotissement pensé pour que chacun garde son espace tout en gardant les autres à portée de voix.</p>
+        <div class="hero__actions">
+          <a href="#projet" class="btn btn--primary">Découvrir le projet →</a>
+          <a href="batiments.html" class="btn btn--outline">Visiter les bâtiments →</a>
+        </div>
+      </div>
+
+      <!-- Stats banner -->
+      <div class="hero__stats">
+        <div class="hero__stats-grid container">
+          <div class="hero__stat">
+            <span class="hero__stat-number">5</span>
+            <span class="hero__stat-label">Bâtiments</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">14</span>
+            <span class="hero__stat-label">Chambres / bâtiment</span>
+          </div>
+          <div class="hero__stat hero__stat--featured">
+            <span class="hero__stat-number">70</span>
+            <span class="hero__stat-label">Chambres au total</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">10</span>
+            <span class="hero__stat-label">Pièces communes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION : LE PROJET ===== -->
+    <section class="section section--dark" id="projet">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>01</span> · Le Projet</p>
+        <h2 class="section__title">Un lotissement, cinq maisons,</h2>
+        <h2 class="section__title"><em>soixante-dix voisins.</em></h2>
+        <div class="section__underline"></div>
+
+        <div class="two-col two-col--wide-left" style="margin-bottom: 4rem;">
+          <!-- Texte -->
+          <div>
+            <p class="section__text">
+              Le Projet Final est un lotissement de cinq bâtiments organisés autour d'espaces communs, conçu pour des personnes âgées atteintes d'Alzheimer qui souhaitent rester autonomes. Chaque bâtiment regroupe deux ailes de sept chambres, et chaque groupe de résidents dispose de sa pièce commune — cuisine, salon, terrasse.
+            </p>
+            <p class="section__text">
+              Le projet répond à une intuition simple : chez soi, à plusieurs. Un cadre que l'on ferme, une cour où l'on se retrouve, et entre les deux, des seuils — portes, terrasse, bancs — pensés comme autant d'occasions de croiser l'autre.
+            </p>
+            <a href="batiments.html" class="btn btn--primary" style="margin-top:1.5rem;">Voir les bâtiments →</a>
+          </div>
+
+          <!-- Plan masse SVG -->
+          <div class="plan-wrapper">
+            <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="min-height:300px;">
+              <!-- Fond -->
+              <rect width="480" height="360" fill="#0A1622"/>
+
+              <!-- Légende titre -->
+              <text x="240" y="18" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="2" font-weight="600">PLAN MASSE — LOTISSEMENT</text>
+
+              <!-- Allée centrale verticale -->
+              <rect x="214" y="30" width="52" height="300" fill="#0D1B2A"/>
+              <line x1="240" y1="30" x2="240" y2="330" stroke="#1D3D60" stroke-width="1" stroke-dasharray="6,5"/>
+
+              <!-- Allée centrale horizontale -->
+              <rect x="30" y="164" width="420" height="42" fill="#0D1B2A"/>
+              <line x1="30" y1="185" x2="450" y2="185" stroke="#1D3D60" stroke-width="1" stroke-dasharray="6,5"/>
+
+              <!-- BÂTIMENT UNIQUE (haut gauche) -->
+              <rect x="38" y="42" width="158" height="104" rx="3" fill="#0D1B2A" stroke="#E8630A" stroke-width="1.5"/>
+              <rect x="48" y="52" width="62" height="84" rx="2" fill="#142940"/>
+              <text x="79" y="98" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">7 ch.</text>
+              <rect x="120" y="52" width="66" height="38" rx="2" fill="#1D3D60" stroke="#E8630A" stroke-width="0.75"/>
+              <text x="153" y="75" text-anchor="middle" fill="#E8630A" font-size="7.5" font-family="Inter" font-weight="600">Pièce</text>
+              <text x="153" y="86" text-anchor="middle" fill="#E8630A" font-size="7.5" font-family="Inter" font-weight="600">commune</text>
+              <text x="117" y="157" text-anchor="middle" fill="#D0D6DF" font-size="9" font-family="Inter" font-weight="600">Bâtiment unique</text>
+
+              <!-- MODÈLE A - bât 1 (haut droite) -->
+              <rect x="284" y="42" width="158" height="104" rx="3" fill="#0D1B2A" stroke="#E8630A" stroke-width="1.5"/>
+              <rect x="294" y="52" width="62" height="84" rx="2" fill="#142940"/>
+              <text x="325" y="98" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">7 ch.</text>
+              <rect x="366" y="52" width="66" height="38" rx="2" fill="#1D3D60" stroke="#E8630A" stroke-width="0.75"/>
+              <text x="399" y="75" text-anchor="middle" fill="#E8630A" font-size="7.5" font-family="Inter" font-weight="600">Pièce</text>
+              <text x="399" y="86" text-anchor="middle" fill="#E8630A" font-size="7.5" font-family="Inter" font-weight="600">commune</text>
+              <text x="399" y="157" text-anchor="middle" fill="#D0D6DF" font-size="9" font-family="Inter" font-weight="600">Modèle A — Bât. 1</text>
+
+              <!-- MODÈLE A - bât 2 (bas gauche) -->
+              <rect x="38" y="218" width="158" height="104" rx="3" fill="#0D1B2A" stroke="#7AB843" stroke-width="1.5"/>
+              <rect x="48" y="228" width="62" height="84" rx="2" fill="#142940"/>
+              <text x="79" y="274" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">7 ch.</text>
+              <rect x="120" y="228" width="66" height="38" rx="2" fill="#1D3D60" stroke="#7AB843" stroke-width="0.75"/>
+              <text x="153" y="251" text-anchor="middle" fill="#7AB843" font-size="7.5" font-family="Inter" font-weight="600">Pièce</text>
+              <text x="153" y="262" text-anchor="middle" fill="#7AB843" font-size="7.5" font-family="Inter" font-weight="600">commune</text>
+              <text x="117" y="333" text-anchor="middle" fill="#D0D6DF" font-size="9" font-family="Inter" font-weight="600">Modèle A — Bât. 2</text>
+
+              <!-- MODÈLE B - bât 1 (bas droite) -->
+              <rect x="284" y="218" width="158" height="104" rx="3" fill="#0D1B2A" stroke="#7AB843" stroke-width="1.5"/>
+              <rect x="294" y="228" width="62" height="84" rx="2" fill="#142940"/>
+              <text x="325" y="274" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">7 ch.</text>
+              <rect x="366" y="228" width="66" height="38" rx="2" fill="#1D3D60" stroke="#7AB843" stroke-width="0.75"/>
+              <text x="399" y="251" text-anchor="middle" fill="#7AB843" font-size="7.5" font-family="Inter" font-weight="600">Pièce</text>
+              <text x="399" y="262" text-anchor="middle" fill="#7AB843" font-size="7.5" font-family="Inter" font-weight="600">commune</text>
+              <text x="399" y="333" text-anchor="middle" fill="#D0D6DF" font-size="9" font-family="Inter" font-weight="600">Modèle B</text>
+
+              <!-- Bâtiment accueil (centre) -->
+              <rect x="198" y="152" width="84" height="66" rx="3" fill="#142940" stroke="#D0D6DF" stroke-width="1" stroke-dasharray="3,3"/>
+              <text x="240" y="189" text-anchor="middle" fill="#D0D6DF" font-size="8" font-family="Inter" font-weight="600">Accueil</text>
+
+              <!-- Parking (bas centre) -->
+              <rect x="198" y="230" width="84" height="48" rx="3" fill="#0D1B2A" stroke="#6B7A8F" stroke-width="0.75" stroke-dasharray="3,3"/>
+              <text x="240" y="258" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">Parking</text>
+
+              <!-- Nord -->
+              <circle cx="458" cy="30" r="15" fill="none" stroke="#6B7A8F" stroke-width="1"/>
+              <text x="458" y="35" text-anchor="middle" fill="#D0D6DF" font-size="13" font-family="Inter" font-weight="700">N</text>
+
+              <!-- Échelle -->
+              <line x1="38" y1="350" x2="108" y2="350" stroke="#6B7A8F" stroke-width="1.2"/>
+              <line x1="38" y1="346" x2="38" y2="354" stroke="#6B7A8F" stroke-width="1.2"/>
+              <line x1="108" y1="346" x2="108" y2="354" stroke="#6B7A8F" stroke-width="1.2"/>
+              <text x="73" y="347" text-anchor="middle" fill="#6B7A8F" font-size="7.5" font-family="Inter">0      50 m</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Chiffres clés -->
+        <div class="stats-grid">
+          <div class="stat-block">
+            <span class="stat-block__number">3 200 m²</span>
+            <span class="stat-block__label">Surface totale bâtie</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">5</span>
+            <span class="stat-block__label">Bâtiments résidentiels</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">70</span>
+            <span class="stat-block__label">Chambres individuelles</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">10</span>
+            <span class="stat-block__label">Pièces communes</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION : ACTEURS & NORMES ===== -->
+    <section class="section section--light">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>02</span> · Acteurs & Normes</p>
+        <h2 class="section__title">Qui porte le projet.</h2>
+        <div class="section__underline"></div>
+
+        <!-- Acteurs -->
+        <div class="cards-grid cards-grid--3" style="margin-bottom: 3.5rem;">
+
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="4" stroke="#E8630A" stroke-width="2"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#E8630A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Résidents</h3>
+            <p class="card__text">Personnes âgées atteintes d'Alzheimer, sans perte significative d'autonomie. Le lotissement est conçu pour préserver leur indépendance tout en facilitant les liens sociaux.</p>
+          </div>
+
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#E8630A" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="9" cy="7" r="4" stroke="#E8630A" stroke-width="2"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#E8630A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Familles &amp; visiteurs</h3>
+            <p class="card__text">Accueillis au bâtiment d'accueil, avec possibilité de séjour dans la chambre d'invité dédiée. Les espaces communs facilitent les visites et les retrouvailles.</p>
+          </div>
+
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="9,22 9,12 15,12 15,22" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Mairie</h3>
+            <p class="card__text">Commanditaire du projet. La mairie porte l'initiative et assure le suivi administratif, dans le cadre d'une politique locale d'habitat inclusif pour les seniors.</p>
+          </div>
+
+        </div>
+
+        <!-- Normes -->
+        <p class="section__eyebrow" style="margin-bottom:1.5rem;"><span>Réglementation</span> & Certifications</p>
+        <div class="cards-grid cards-grid--3">
+
+          <div class="badge-card">
+            <div class="badge-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="badge-card__body">
+              <div class="badge-card__title">RE2020</div>
+              <p class="badge-card__desc">Réglementation Environnementale 2020. Exigences sur la performance énergétique, le confort d'été et l'impact carbone du bâtiment.</p>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="badge-card__body">
+              <div class="badge-card__title">HQE</div>
+              <p class="badge-card__desc">Haute Qualité Environnementale. Démarche volontaire visant à réduire les impacts environnementaux du bâtiment tout au long de son cycle de vie.</p>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="#E8630A" stroke-width="2"/>
+                <path d="M9 12l2 2 4-4" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="badge-card__body">
+              <div class="badge-card__title">NF / CE</div>
+              <p class="badge-card__desc">Normes françaises (NF) et marquage européen (CE). Garantissent la conformité des matériaux et des équipements aux standards de sécurité et de qualité.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">P</span>
+            <span class="footer__brand-name">Projet Final</span>
+          </div>
+          <p class="footer__brand-desc">Un lotissement de maisons partagées pour personnes âgées atteintes d'Alzheimer. Projet STI2D — 2025.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Présentation</a></li>
+            <li><a href="batiments.html" class="footer__link">Les Bâtiments</a></li>
+            <li><a href="energie.html" class="footer__link">Énergie</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="galerie.html" class="footer__link">Galerie</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Le projet</div>
+          <ul class="footer__links">
+            <li><a href="index.html#projet" class="footer__link">À propos</a></li>
+            <li><a href="energie.html" class="footer__link">Étude thermique</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="contact.html" class="footer__link">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 <span>Projet Final</span> — Projet STI2D</p>
+        <p class="footer__copy">Habitat partagé · Seniors · Alzheimer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

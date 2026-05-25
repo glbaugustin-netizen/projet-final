@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Énergie — Projet Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">P</span>
+        <span class="nav__logo-text">Projet Final</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Présentation</a></li>
+        <li><a href="batiments.html" class="nav__link">Les Bâtiments</a></li>
+        <li><a href="energie.html" class="nav__link active">Énergie</a></li>
+        <li><a href="structure.html" class="nav__link">Structure</a></li>
+        <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a></li>
+      </ul>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav__mobile" id="mobileNav">
+      <a href="index.html" class="nav__link">Présentation</a>
+      <a href="batiments.html" class="nav__link">Les Bâtiments</a>
+      <a href="energie.html" class="nav__link active">Énergie</a>
+      <a href="structure.html" class="nav__link">Structure</a>
+      <a href="galerie.html" class="nav__link">Galerie</a>
+      <a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--short section--dark">
+      <div class="hero__content container">
+        <p class="hero__eyebrow">03 · Énergie</p>
+        <h1 class="hero__title">Performance énergétique <em>et confort thermique.</em></h1>
+        <p class="hero__subtitle">Une étude thermique comparative pour respecter la RE2020 tout en minimisant les consommations énergétiques du lotissement.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION : ÉTUDE THERMIQUE ===== -->
+    <section class="section section--dark">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>Méthodologie</span> · Étude comparative</p>
+        <h2 class="section__title">Comparer pour <em>mieux choisir.</em></h2>
+        <div class="section__underline"></div>
+
+        <p class="section__text" style="max-width:700px; margin-bottom:2.5rem;">
+          Plusieurs solutions techniques ont été étudiées et comparées : isolation, systèmes de chauffage, ventilation, menuiseries. L'objectif : atteindre la meilleure performance énergétique avec un impact environnemental minimal, tout en restant dans une enveloppe budgétaire raisonnable.
+        </p>
+
+        <!-- Tableau comparatif -->
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Solution</th>
+                <th>Isolation</th>
+                <th>Chauffage</th>
+                <th>Ventilation</th>
+                <th>Cep (kWh/m²/an)</th>
+                <th>Bbio</th>
+                <th>Classe DPE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:var(--blanc);">Solution 1</strong><br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">Référence</span></td>
+                <td>Laine de verre<br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">100 mm</span></td>
+                <td>Chaudière gaz</td>
+                <td>VMC simple flux</td>
+                <td style="color:var(--orange); font-weight:600;">87</td>
+                <td style="color:var(--gris-acier-clair);">— </td>
+                <td><span class="dpe-badge dpe-b">B</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--blanc);">Solution 2</strong><br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">Optimisée</span></td>
+                <td>Laine de roche<br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">160 mm</span></td>
+                <td>Pompe à chaleur</td>
+                <td>VMC double flux</td>
+                <td style="color:var(--orange); font-weight:600;">52</td>
+                <td style="color:var(--gris-acier-clair);">—</td>
+                <td><span class="dpe-badge dpe-a">A</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--blanc);">Solution 3</strong><br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">Biosourcée</span></td>
+                <td>Ouate de cellulose<br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">200 mm</span></td>
+                <td>Pompe à chaleur</td>
+                <td>VMC double flux</td>
+                <td style="color:var(--orange); font-weight:600;">48</td>
+                <td style="color:var(--gris-acier-clair);">—</td>
+                <td><span class="dpe-badge dpe-a">A</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--blanc);">Solution 4</strong><br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">Retenue</span></td>
+                <td>Fibre de bois<br><span style="font-size:0.78rem;color:var(--gris-acier-clair);">180 mm</span></td>
+                <td>PAC + solaire</td>
+                <td>VMC double flux HR</td>
+                <td style="color:var(--orange); font-weight:600;">38</td>
+                <td style="color:var(--gris-acier-clair);">—</td>
+                <td><span class="dpe-badge dpe-a">A</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note-box" style="margin-top:1.5rem;">
+          <p>Les valeurs de Cep et Bbio sont des données provisoires à affiner lors de la simulation thermique dynamique. Les données complètes sont disponibles dans le tableur d'étude thermique.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION : RÉSULTATS ===== -->
+    <section class="section section--light">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>Résultats</span> · Solution retenue</p>
+        <h2 class="section__title">Résultats <em>de l'étude.</em></h2>
+        <div class="section__underline"></div>
+
+        <p class="section__text" style="max-width:640px; margin-bottom:3rem;">
+          La solution 4 (fibre de bois + PAC + VMC double flux hygro-réglable) a été retenue pour son meilleur rapport performance / impact environnemental. Elle permet d'atteindre la classe A tout en privilégiant des matériaux biosourcés.
+        </p>
+
+        <!-- Chiffres clés résultats -->
+        <div class="stats-grid" style="margin-bottom:3rem;">
+          <div class="stat-block">
+            <span class="stat-block__number" style="color:var(--vert-a);">A</span>
+            <span class="stat-block__label">Classe énergétique visée</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">38</span>
+            <span class="stat-block__label">Cep kWh/m²/an (estimé)</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">—</span>
+            <span class="stat-block__label">Bbio (à compléter)</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-block__number">RE2020</span>
+            <span class="stat-block__label">Réglementation respectée</span>
+          </div>
+        </div>
+
+        <!-- Détail solution retenue : 3 cartes -->
+        <div class="cards-grid cards-grid--3" style="margin-bottom:3rem;">
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" fill="none"/>
+                <path d="M12 6v6l4 2" stroke="#E8630A" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="10" stroke="#E8630A" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Isolation — Fibre de bois</h3>
+            <p class="card__text">180 mm en parois, 220 mm en toiture. Matériau biosourcé, bonne inertie thermique, confort en été comme en hiver. Déphasage thermique supérieur à 12h.</p>
+          </div>
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Chauffage — PAC + Solaire</h3>
+            <p class="card__text">Pompe à chaleur air/eau avec appoint solaire thermique. Coefficient de performance (COP) supérieur à 3,5. Production d'eau chaude sanitaire intégrée.</p>
+          </div>
+          <div class="card card--light">
+            <div class="card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" stroke="#E8630A" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Ventilation — VMC DF HR</h3>
+            <p class="card__text">VMC double flux hygro-réglable avec échangeur thermique. Récupération de chaleur sur l'air vicié &gt; 85 %. Qualité de l'air intérieur optimisée.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <a href="#" class="btn btn--primary">Télécharger l'étude thermique →</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">P</span>
+            <span class="footer__brand-name">Projet Final</span>
+          </div>
+          <p class="footer__brand-desc">Un lotissement de maisons partagées pour personnes âgées atteintes d'Alzheimer. Projet STI2D — 2025.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Présentation</a></li>
+            <li><a href="batiments.html" class="footer__link">Les Bâtiments</a></li>
+            <li><a href="energie.html" class="footer__link">Énergie</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="galerie.html" class="footer__link">Galerie</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Le projet</div>
+          <ul class="footer__links">
+            <li><a href="index.html#projet" class="footer__link">À propos</a></li>
+            <li><a href="energie.html" class="footer__link">Étude thermique</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="contact.html" class="footer__link">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 <span>Projet Final</span> — Projet STI2D</p>
+        <p class="footer__copy">Habitat partagé · Seniors · Alzheimer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

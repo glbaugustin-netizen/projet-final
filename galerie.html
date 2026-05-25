@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Projet Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">P</span>
+        <span class="nav__logo-text">Projet Final</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Présentation</a></li>
+        <li><a href="batiments.html" class="nav__link">Les Bâtiments</a></li>
+        <li><a href="energie.html" class="nav__link">Énergie</a></li>
+        <li><a href="structure.html" class="nav__link">Structure</a></li>
+        <li><a href="galerie.html" class="nav__link active">Galerie</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a></li>
+      </ul>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav__mobile" id="mobileNav">
+      <a href="index.html" class="nav__link">Présentation</a>
+      <a href="batiments.html" class="nav__link">Les Bâtiments</a>
+      <a href="energie.html" class="nav__link">Énergie</a>
+      <a href="structure.html" class="nav__link">Structure</a>
+      <a href="galerie.html" class="nav__link active">Galerie</a>
+      <a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--short section--dark">
+      <div class="hero__content container">
+        <p class="hero__eyebrow">05 · Galerie</p>
+        <h1 class="hero__title">Le projet <em>en images.</em></h1>
+        <p class="hero__subtitle">Plans, rendus, schémas et documents graphiques du Projet Final. Les visuels seront ajoutés au fur et à mesure de l'avancement du projet.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION : GALERIE ===== -->
+    <section class="section section--dark">
+      <div class="container">
+
+        <!-- Filtres catégories -->
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:3rem;">
+          <button style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:0.55rem 1.25rem; border-radius:var(--radius); border:1px solid var(--orange); background:var(--orange); color:var(--blanc); cursor:pointer; transition:background var(--transition);">Tous</button>
+          <button style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:0.55rem 1.25rem; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.12); background:transparent; color:var(--gris-clair); cursor:pointer; transition:background var(--transition), color var(--transition);">Plans</button>
+          <button style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:0.55rem 1.25rem; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.12); background:transparent; color:var(--gris-clair); cursor:pointer; transition:background var(--transition), color var(--transition);">Façades</button>
+          <button style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:0.55rem 1.25rem; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.12); background:transparent; color:var(--gris-clair); cursor:pointer; transition:background var(--transition), color var(--transition);">Rendus 3D</button>
+          <button style="font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:0.55rem 1.25rem; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.12); background:transparent; color:var(--gris-clair); cursor:pointer; transition:background var(--transition), color var(--transition);">Énergie</button>
+        </div>
+
+        <!-- Grille galerie -->
+        <div class="gallery-grid">
+
+          <!-- Item 1 — grand (2 colonnes) -->
+          <div class="gallery-item" style="grid-column: span 2; aspect-ratio: 21/9;">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="560" height="240" fill="#0A1622"/>
+              <line x1="0" y1="120" x2="560" y2="120" stroke="#1D3D60" stroke-width="0.5"/>
+              <line x1="280" y1="0" x2="280" y2="240" stroke="#1D3D60" stroke-width="0.5"/>
+              <rect x="80" y="60" width="160" height="120" rx="2" fill="none" stroke="#E8630A" stroke-width="1" stroke-dasharray="4,3"/>
+              <rect x="320" y="60" width="160" height="120" rx="2" fill="none" stroke="#E8630A" stroke-width="1" stroke-dasharray="4,3"/>
+              <text x="160" y="125" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter">Aile gauche</text>
+              <text x="400" y="125" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter">Aile droite</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:1rem;left:0;right:0;">Plan masse général — Vue d'ensemble du lotissement</span>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <rect x="40" y="30" width="240" height="120" rx="3" fill="none" stroke="#142940" stroke-width="1"/>
+              <rect x="40" y="30" width="90" height="120" fill="#142940"/>
+              <rect x="190" y="30" width="90" height="120" fill="#142940"/>
+              <rect x="130" y="55" width="60" height="70" rx="2" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <text x="160" y="93" text-anchor="middle" fill="#E8630A" font-size="8" font-family="Inter">Espace</text>
+              <text x="160" y="103" text-anchor="middle" fill="#E8630A" font-size="8" font-family="Inter">commun</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Plan RDC — Bâtiment type</span>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Façade simple -->
+              <rect x="30" y="50" width="260" height="110" rx="2" fill="#142940" stroke="#6B7A8F" stroke-width="1"/>
+              <!-- Toit -->
+              <polygon points="20,50 160,15 300,50" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <!-- Fenêtres -->
+              <rect x="55" y="80" width="35" height="35" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.75"/>
+              <rect x="110" y="80" width="35" height="35" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.75"/>
+              <rect x="175" y="80" width="35" height="35" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.75"/>
+              <rect x="230" y="80" width="35" height="35" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.75"/>
+              <!-- Porte -->
+              <rect x="140" y="120" width="40" height="40" rx="1" fill="#0D1B2A" stroke="#6B7A8F" stroke-width="0.75"/>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Façade principale — Bâtiment unique</span>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Coupe -->
+              <rect x="30" y="40" width="120" height="100" rx="2" fill="#142940" stroke="#6B7A8F" stroke-width="0.75"/>
+              <rect x="170" y="40" width="120" height="100" rx="2" fill="#142940" stroke="#6B7A8F" stroke-width="0.75"/>
+              <!-- Toit coupe -->
+              <polygon points="20,40 90,15 160,40" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <polygon points="160,40 245,15 310,40" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <!-- Sol -->
+              <rect x="20" y="140" width="280" height="8" fill="#1D3D60"/>
+              <text x="160" y="163" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="1">COUPE TRANSVERSALE</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Coupe transversale — Modèle A</span>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Graphe DPE style -->
+              <text x="160" y="30" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter" letter-spacing="2" font-weight="600">BILAN ÉNERGÉTIQUE</text>
+              <!-- Barres DPE -->
+              <rect x="40" y="45" width="60" height="18" rx="2" fill="#2F9E63"/>
+              <text x="105" y="58" fill="#D0D6DF" font-size="9" font-family="Inter" font-weight="600">A — &lt; 50 kWh</text>
+              <rect x="40" y="70" width="80" height="18" rx="2" fill="#7AB843"/>
+              <text x="125" y="83" fill="#D0D6DF" font-size="9" font-family="Inter">B — 51–90</text>
+              <rect x="40" y="95" width="105" height="18" rx="2" fill="#C8D400"/>
+              <text x="150" y="108" fill="#6B7A8F" font-size="9" font-family="Inter">C — 91–150</text>
+              <rect x="40" y="120" width="130" height="18" rx="2" fill="#F0B400"/>
+              <text x="175" y="133" fill="#6B7A8F" font-size="9" font-family="Inter">D — 151–230</text>
+              <!-- Indicateur solution retenue -->
+              <circle cx="25" cy="54" r="5" fill="#E8630A"/>
+              <text x="25" y="57" text-anchor="middle" fill="#fff" font-size="6" font-family="Inter" font-weight="700">✓</text>
+              <text x="160" y="165" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">Solution retenue — Classe A visée</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Diagnostic énergétique — Classes DPE</span>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Schéma structure -->
+              <rect x="60" y="130" width="200" height="16" rx="1" fill="#1D3D60" stroke="#6B7A8F" stroke-width="0.75"/>
+              <text x="160" y="155" text-anchor="middle" fill="#6B7A8F" font-size="7.5" font-family="Inter">Fondations</text>
+              <rect x="60" y="45" width="14" height="85" rx="1" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <rect x="246" y="45" width="14" height="85" rx="1" fill="#1D3D60" stroke="#E8630A" stroke-width="1"/>
+              <rect x="153" y="70" width="14" height="60" rx="1" fill="#1D3D60" stroke="#E8630A" stroke-width="0.75"/>
+              <polygon points="50,45 160,18 270,45" fill="none" stroke="#E8630A" stroke-width="1.5"/>
+              <rect x="74" y="90" width="172" height="8" rx="1" fill="#142940" stroke="#6B7A8F" stroke-width="0.5"/>
+              <text x="160" y="25" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="2">SCHÉMA STRUCTUREL</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Schéma de structure — Ossature type</span>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Vue perspective simplifiée -->
+              <polygon points="60,140 60,60 200,40 200,120" fill="#142940" stroke="#6B7A8F" stroke-width="0.75"/>
+              <polygon points="200,40 260,60 260,140 200,120" fill="#1D3D60" stroke="#6B7A8F" stroke-width="0.75"/>
+              <polygon points="60,60 120,40 260,60 200,40" fill="#1D3060" stroke="#E8630A" stroke-width="1"/>
+              <!-- Toit volume -->
+              <polygon points="50,62 160,28 270,62" fill="#142940" stroke="#E8630A" stroke-width="1"/>
+              <!-- Fenêtres perspective -->
+              <rect x="75" y="85" width="25" height="25" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.5"/>
+              <rect x="110" y="82" width="25" height="25" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="0.5"/>
+              <text x="160" y="165" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="1">PERSPECTIVE — RENDU À VENIR</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Vue perspective — Bâtiment unique</span>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <text x="160" y="25" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter" letter-spacing="2" font-weight="600">PLAN DE LOTISSEMENT</text>
+              <!-- Allées -->
+              <rect x="148" y="30" width="24" height="140" fill="#0D1B2A"/>
+              <rect x="30" y="95" width="260" height="20" fill="#0D1B2A"/>
+              <!-- 4 bâtiments -->
+              <rect x="38" y="38" width="88" height="50" rx="2" fill="#142940" stroke="#E8630A" stroke-width="1"/>
+              <rect x="194" y="38" width="88" height="50" rx="2" fill="#142940" stroke="#E8630A" stroke-width="1"/>
+              <rect x="38" y="120" width="88" height="50" rx="2" fill="#142940" stroke="#7AB843" stroke-width="1"/>
+              <rect x="194" y="120" width="88" height="50" rx="2" fill="#142940" stroke="#7AB843" stroke-width="1"/>
+              <!-- Accueil -->
+              <rect x="126" y="80" width="48" height="34" rx="2" fill="#1D3D60" stroke="#D0D6DF" stroke-width="0.75" stroke-dasharray="2,2"/>
+              <text x="150" y="100" text-anchor="middle" fill="#D0D6DF" font-size="7" font-family="Inter">Accueil</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Plan masse — Implantation des 5 bâtiments</span>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Détail chambre -->
+              <rect x="50" y="30" width="220" height="140" rx="3" fill="#142940" stroke="#6B7A8F" stroke-width="0.75"/>
+              <!-- Lit -->
+              <rect x="68" y="45" width="60" height="40" rx="2" fill="#1D3D60" stroke="#E8630A" stroke-width="0.75"/>
+              <rect x="68" y="45" width="60" height="12" rx="1" fill="#E8630A" opacity="0.4"/>
+              <!-- Bureau -->
+              <rect x="68" y="120" width="55" height="30" rx="1" fill="#1D3D60" stroke="#6B7A8F" stroke-width="0.5"/>
+              <!-- Fenêtre -->
+              <rect x="200" y="50" width="20" height="50" rx="1" fill="#0D1B2A" stroke="#E8630A" stroke-width="1"/>
+              <!-- Porte -->
+              <path d="M50,130 A30,30 0 0,1 80,160" fill="none" stroke="#6B7A8F" stroke-width="0.75" stroke-dasharray="2,2"/>
+              <text x="160" y="165" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="1">PLAN CHAMBRE TYPE</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Plan de chambre — Mobilier type</span>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Graphe comparatif solutions -->
+              <text x="160" y="22" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter" letter-spacing="2" font-weight="600">COMPARATIF MATÉRIAUX</text>
+              <!-- Axe Y -->
+              <line x1="60" y1="35" x2="60" y2="150" stroke="#6B7A8F" stroke-width="0.75"/>
+              <!-- Axe X -->
+              <line x1="60" y1="150" x2="290" y2="150" stroke="#6B7A8F" stroke-width="0.75"/>
+              <!-- Barres -->
+              <rect x="75" y="70" width="35" height="80" rx="1" fill="#6B7A8F" opacity="0.5"/>
+              <rect x="125" y="55" width="35" height="95" rx="1" fill="#7AB843" opacity="0.7"/>
+              <rect x="175" y="45" width="35" height="105" rx="1" fill="#E8630A" opacity="0.8"/>
+              <rect x="225" y="85" width="35" height="65" rx="1" fill="#7AB843" opacity="0.5"/>
+              <!-- Labels -->
+              <text x="92" y="163" text-anchor="middle" fill="#6B7A8F" font-size="7" font-family="Inter">Sol. 1</text>
+              <text x="142" y="163" text-anchor="middle" fill="#6B7A8F" font-size="7" font-family="Inter">Sol. 2</text>
+              <text x="192" y="163" text-anchor="middle" fill="#E8630A" font-size="7" font-family="Inter" font-weight="600">Sol. 4 ✓</text>
+              <text x="242" y="163" text-anchor="middle" fill="#6B7A8F" font-size="7" font-family="Inter">Sol. 3</text>
+              <text x="35" y="38" text-anchor="middle" fill="#6B7A8F" font-size="7" font-family="Inter" transform="rotate(-90,35,100)">Performance</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Analyse comparative — Matériaux de structure</span>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <text x="160" y="22" text-anchor="middle" fill="#6B7A8F" font-size="9" font-family="Inter" letter-spacing="2" font-weight="600">DÉTAIL FAÇADE — COUPE</text>
+              <!-- Coupe paroi -->
+              <rect x="100" y="35" width="22" height="120" fill="#1D3D60" stroke="#6B7A8F" stroke-width="0.5"/>
+              <rect x="122" y="35" width="40" height="120" fill="#142940" stroke="#E8630A" stroke-width="0.75"/>
+              <rect x="162" y="35" width="16" height="120" fill="#1D3D60" stroke="#6B7A8F" stroke-width="0.5"/>
+              <rect x="178" y="35" width="22" height="120" fill="#0D1B2A" stroke="#6B7A8F" stroke-width="0.5"/>
+              <!-- Labels -->
+              <line x1="90" y1="95" x2="100" y2="95" stroke="#6B7A8F" stroke-width="0.5"/>
+              <text x="85" y="95" text-anchor="end" fill="#6B7A8F" font-size="7" font-family="Inter">OSB</text>
+              <line x1="200" y1="75" x2="162" y2="75" stroke="#E8630A" stroke-width="0.5"/>
+              <text x="202" y="75" fill="#E8630A" font-size="7" font-family="Inter">Fibre</text>
+              <text x="202" y="84" fill="#E8630A" font-size="7" font-family="Inter">de bois</text>
+              <line x1="220" y1="115" x2="178" y2="115" stroke="#6B7A8F" stroke-width="0.5"/>
+              <text x="222" y="115" fill="#6B7A8F" font-size="7" font-family="Inter">Pl. BA</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Détail technique — Coupe de paroi isolée</span>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="gallery-item">
+            <div class="gallery-item__overlay"></div>
+            <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position:absolute;inset:0;">
+              <rect width="320" height="180" fill="#0A1622"/>
+              <!-- Espace extérieur / terrasse -->
+              <rect x="30" y="30" width="120" height="80" rx="2" fill="#142940" stroke="#6B7A8F" stroke-width="0.75"/>
+              <text x="90" y="74" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter">Bâtiment</text>
+              <!-- Terrasse -->
+              <rect x="150" y="50" width="70" height="60" rx="2" fill="#1D3D60" stroke="#E8630A" stroke-width="1" stroke-dasharray="3,2"/>
+              <text x="185" y="83" text-anchor="middle" fill="#E8630A" font-size="7.5" font-family="Inter">Terrasse</text>
+              <!-- Végétation -->
+              <circle cx="250" cy="65" r="18" fill="#1D3060" stroke="#7AB843" stroke-width="1"/>
+              <circle cx="275" cy="85" r="12" fill="#1D3060" stroke="#7AB843" stroke-width="1"/>
+              <circle cx="245" cy="100" r="14" fill="#1D3060" stroke="#7AB843" stroke-width="1"/>
+              <text x="255" y="130" text-anchor="middle" fill="#7AB843" font-size="7.5" font-family="Inter">Espaces verts</text>
+              <text x="160" y="160" text-anchor="middle" fill="#6B7A8F" font-size="8" font-family="Inter" letter-spacing="1">AMÉNAGEMENT EXTÉRIEUR</text>
+            </svg>
+            <span class="gallery-item__label" style="position:absolute;bottom:0.75rem;left:0;right:0;">Aménagements extérieurs — Terrasses et jardins</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">P</span>
+            <span class="footer__brand-name">Projet Final</span>
+          </div>
+          <p class="footer__brand-desc">Un lotissement de maisons partagées pour personnes âgées atteintes d'Alzheimer. Projet STI2D — 2025.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Présentation</a></li>
+            <li><a href="batiments.html" class="footer__link">Les Bâtiments</a></li>
+            <li><a href="energie.html" class="footer__link">Énergie</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="galerie.html" class="footer__link">Galerie</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Le projet</div>
+          <ul class="footer__links">
+            <li><a href="index.html#projet" class="footer__link">À propos</a></li>
+            <li><a href="energie.html" class="footer__link">Étude thermique</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="contact.html" class="footer__link">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 <span>Projet Final</span> — Projet STI2D</p>
+        <p class="footer__copy">Habitat partagé · Seniors · Alzheimer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
