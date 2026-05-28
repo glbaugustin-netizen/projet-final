@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Bâtiments — Projet Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">P</span>
+        <span class="nav__logo-text">Projet Final</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Présentation</a></li>
+        <li><a href="batiments.html" class="nav__link active">Les Bâtiments</a></li>
+        <li><a href="energie.html" class="nav__link">Énergie</a></li>
+        <li><a href="structure.html" class="nav__link">Structure</a></li>
+        <li><a href="galerie.html" class="nav__link">Galerie</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a></li>
+      </ul>
+      <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <nav class="nav__mobile" id="mobileNav">
+      <a href="index.html" class="nav__link">Présentation</a>
+      <a href="batiments.html" class="nav__link active">Les Bâtiments</a>
+      <a href="energie.html" class="nav__link">Énergie</a>
+      <a href="structure.html" class="nav__link">Structure</a>
+      <a href="galerie.html" class="nav__link">Galerie</a>
+      <a href="contact.html" class="nav__link nav__link--cta">NOUS CONTACTER →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero hero--short section--dark">
+      <div class="hero__content container">
+        <p class="hero__eyebrow">02 · Les Bâtiments</p>
+        <h1 class="hero__title">Cinq maisons, <em>trois modèles.</em></h1>
+        <p class="hero__subtitle">Chaque bâtiment est un bâtiment double composé de deux ailes. Trois modèles architecturaux, tous différents, mais accordés sur le même langage.</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION : LES 5 BÂTIMENTS ===== -->
+    <section class="section section--dark">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>Inventaire</span> · Cinq bâtiments résidentiels</p>
+        <h2 class="section__title">Les <em>cinq bâtiments.</em></h2>
+        <div class="section__underline"></div>
+
+        <div class="cards-grid">
+
+          <!-- Carte 1 -->
+          <div class="card">
+            <span class="card__filigrane">—</span>
+            <div class="card__number">01</div>
+            <h3 class="card__title">Bâtiment unique</h3>
+            <p class="card__subtitle">Modèle singulier · construit 1 fois</p>
+            <p class="card__text">Bâtiment de conception originale, sans équivalent dans le lotissement. Il constitue la pièce centrale du projet et marque l'entrée de l'ensemble résidentiel.</p>
+            <div class="card__stats">
+              <span class="card__stat"><strong>14</strong> chambres</span>
+              <span class="card__stat"><strong>280 m²</strong></span>
+              <span class="card__stat"><strong>2</strong> pièces communes</span>
+            </div>
+          </div>
+
+          <!-- Carte 2 -->
+          <div class="card">
+            <span class="card__filigrane">A</span>
+            <div class="card__number">02</div>
+            <h3 class="card__title">Modèle A — Bâtiment 1</h3>
+            <p class="card__subtitle">Modèle A · construit 2 fois</p>
+            <p class="card__text">Premier exemplaire du modèle A. Deux ailes symétriques, orientées pour maximiser l'apport solaire passif et les vues sur les espaces verts communs.</p>
+            <div class="card__stats">
+              <span class="card__stat"><strong>14</strong> chambres</span>
+              <span class="card__stat"><strong>— m²</strong></span>
+              <span class="card__stat"><strong>2</strong> pièces communes</span>
+            </div>
+          </div>
+
+          <!-- Carte 3 -->
+          <div class="card">
+            <span class="card__filigrane">A</span>
+            <div class="card__number">03</div>
+            <h3 class="card__title">Modèle A — Bâtiment 2</h3>
+            <p class="card__subtitle">Identique au bâtiment précédent</p>
+            <p class="card__text">Second exemplaire du modèle A, en miroir du précédent. La répétition du modèle assure cohérence formelle et économie de moyens à la construction.</p>
+            <div class="card__stats">
+              <span class="card__stat"><strong>14</strong> chambres</span>
+              <span class="card__stat"><strong>— m²</strong></span>
+              <span class="card__stat"><strong>2</strong> pièces communes</span>
+            </div>
+          </div>
+
+          <!-- Carte 4 -->
+          <div class="card">
+            <span class="card__filigrane">B</span>
+            <div class="card__number">04</div>
+            <h3 class="card__title">Modèle B — Bâtiment 1</h3>
+            <p class="card__subtitle">Modèle B · construit 2 fois</p>
+            <p class="card__text">Premier exemplaire du modèle B. Variante volumétrique du modèle A, avec une organisation intérieure légèrement différente adaptée à la topographie du terrain.</p>
+            <div class="card__stats">
+              <span class="card__stat"><strong>14</strong> chambres</span>
+              <span class="card__stat"><strong>— m²</strong></span>
+              <span class="card__stat"><strong>2</strong> pièces communes</span>
+            </div>
+          </div>
+
+          <!-- Carte 5 (centré) -->
+          <div class="card">
+            <span class="card__filigrane">B</span>
+            <div class="card__number">05</div>
+            <h3 class="card__title">Modèle B — Bâtiment 2</h3>
+            <p class="card__subtitle">Identique au bâtiment précédent</p>
+            <p class="card__text">Second exemplaire du modèle B, symétrique au précédent. Complète l'ensemble résidentiel et équilibre la composition générale du lotissement.</p>
+            <div class="card__stats">
+              <span class="card__stat"><strong>14</strong> chambres</span>
+              <span class="card__stat"><strong>— m²</strong></span>
+              <span class="card__stat"><strong>2</strong> pièces communes</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION : ORGANISATION INTÉRIEURE ===== -->
+    <section class="section section--light">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>Typologie</span> · Plan type</p>
+        <h2 class="section__title">Comment s'organise <em>un bâtiment.</em></h2>
+        <div class="section__underline"></div>
+
+        <!-- Schéma SVG du plan type -->
+        <div class="floorplan-wrapper">
+          <img src="img/plan-batiment-type.jpg" alt="Plan type — Organisation d'un bâtiment">
+        </div>
+
+        <p class="section__text">
+          Chaque bâtiment se compose de deux ailes symétriques. Chaque aile accueille sept chambres individuelles et une pièce commune — un espace partagé pour les repas, les activités et la détente. Sept résidents, un salon : l'échelle du lien social.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION : ACCUEIL & PARKING ===== -->
+    <section class="section section--dark">
+      <div class="container">
+
+        <p class="section__eyebrow"><span>Équipements</span> · Communs au lotissement</p>
+        <h2 class="section__title">Accueil &amp; <em>Stationnement.</em></h2>
+        <div class="section__underline"></div>
+
+        <div class="two-col">
+
+          <div class="info-block">
+            <div class="info-block__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="9,22 9,12 15,12 15,22" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="info-block__title">Bâtiment d'accueil</h3>
+            <p class="info-block__text">
+              Point d'entrée du lotissement. Bureaux pour le personnel administratif et soignant. Une chambre d'invité permet aux proches de séjourner sur place lors de leurs visites.
+            </p>
+            <p class="info-block__text" style="margin-top:0.75rem;">
+              L'accueil centralise également les fonctions de sécurité et de surveillance discrète, sans créer un sentiment d'enfermement pour les résidents.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <rect x="1" y="3" width="15" height="13" rx="2" stroke="#E8630A" stroke-width="2"/>
+                <path d="M16 8h4l3 3v5h-7V8z" stroke="#E8630A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="5.5" cy="18.5" r="2.5" stroke="#E8630A" stroke-width="2"/>
+                <circle cx="18.5" cy="18.5" r="2.5" stroke="#E8630A" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="info-block__title">Parking</h3>
+            <p class="info-block__text">
+              Parking intégré au lotissement, accessible aux visiteurs, aux familles et au personnel soignant. Conçu pour ne pas couper visuellement les résidents de l'entrée du site.
+            </p>
+            <p class="info-block__text" style="margin-top:0.75rem;">
+              Des places PMR (personnes à mobilité réduite) sont prévues à proximité immédiate du bâtiment d'accueil, conformément aux normes d'accessibilité en vigueur.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">P</span>
+            <span class="footer__brand-name">Projet Final</span>
+          </div>
+          <p class="footer__brand-desc">Un lotissement de maisons partagées pour personnes âgées atteintes d'Alzheimer. Projet STI2D — 2025.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Présentation</a></li>
+            <li><a href="batiments.html" class="footer__link">Les Bâtiments</a></li>
+            <li><a href="energie.html" class="footer__link">Énergie</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="galerie.html" class="footer__link">Galerie</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Le projet</div>
+          <ul class="footer__links">
+            <li><a href="index.html#projet" class="footer__link">À propos</a></li>
+            <li><a href="energie.html" class="footer__link">Étude thermique</a></li>
+            <li><a href="structure.html" class="footer__link">Structure</a></li>
+            <li><a href="contact.html" class="footer__link">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 <span>Projet Final</span> — Projet STI2D</p>
+        <p class="footer__copy">Habitat partagé · Seniors · Alzheimer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
